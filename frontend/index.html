@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    Exam Registration Portal
+  </header>
+
+  <div class="container">
+    <h2>Register for Your Exam</h2>
+    <form id="examForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your 10-digit phone number" required pattern="[0-9]{10}">
+
+      <label for="exam">Select Exam</label>
+      <select id="exam" required>
+        <option value="">-- Choose Exam --</option>
+        <option value="Maths">Mathematics</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Computer">Computer Science</option>
+      </select>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+
+    <div class="success" id="successMessage">
+      ✅ Registration Successful! Your details have been recorded.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
